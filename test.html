@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ABC School</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate on Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        scroll-behavior: smooth;
+      }
+      section {
+        padding: 80px 0;
+      }
+      .hero {
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Rainbow-diagram-ROYGBIV.svg/640px-Rainbow-diagram-ROYGBIV.svg.png")
+          center/cover no-repeat;
+        color: #100909;
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .cta-btn {
+        background: #007bff;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .cta-btn:hover {
+        background: #0056b3;
+      }
+      .icon-box {
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .icon-box:hover {
+        transform: translateY(-10px);
+      }
+
+      /* Sticky buttons */
+      .sticky-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 9999;
+      }
+      .sticky-buttons a {
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+      }
+      .btn-call {
+        background-color: #28a745;
+      }
+      .btn-email {
+        background-color: #007bff;
+      }
+
+      /* Gallery */
+      .gallery img {
+        transition: transform 0.3s ease-in-out;
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="hero">
+      <div data-aos="fade-up">
+        <h1>Rainbow EM School</h1>
+        <p class="lead">Nurturing Bright Minds for Tomorrow</p>
+        <a href="#admissions" class="cta-btn mt-3 d-inline-block"
+          >Admissions Open</a
+        >
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <h2>About Us</h2>
+            <p>
+              Founded in 2017, At Rainbow EM School, we believe every child is
+              unique and full of potential. Our mission is to nurture young
+              minds with the right blend of academic excellence, creativity, and
+              values. Beyond textbooks, we focus on building confidence,
+              curiosity, and compassion, helping children grow into responsible
+              and capable individuals. We are committed to providing a safe,
+              supportive, and inspiring environment where children can explore,
+              learn, and thrive—laying strong foundations for their future
+              success. Located in Mangalagiri, Andhra Pradesh, we proudly serve
+              families in Amaravati and Guntur regions.
+            </p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/007/343/251/small_2x/school-building-in-flat-style-modern-school-college-building-illustration-vector.jpg"
+              class="img-fluid rounded shadow"
+              alt="School"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics -->
+    <section id="academics" class="bg-light">
+      <div class="container text-center">
+        <h2 class="mb-5" data-aos="fade-up">Academics & Curriculum</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="icon-box">
+              <h5>📘 English</h5>
+              <p>Strong foundation in grammar, reading, and writing.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <h5>🔢 Mathematics</h5>
+              <p>Problem-solving skills through practical learning.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <h5>🌍 Social Science</h5>
+              <p>Understanding history, geography, and civics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights">
+      <div class="container text-center">
+        <h2 class="mb-5" data-aos="fade-up">Why Choose Us?</h2>
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="icon-box">👩‍🏫 Qualified Teachers</div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">🤝 Individual Attention</div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">💰 Affordable Fees</div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">🏫 Safe Campus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Life / Gallery Section -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Student Life</h2>
+        <div class="row g-4 gallery">
+          <div class="col-6 col-md-4">
+            <img
+              src="https://t4.ftcdn.net/jpg/06/46/78/41/360_F_646784196_u1F6LtwEULzPKO7rXY1nUUS1RZqu5oLG.jpg"
+              alt="Classroom"
+              class="img-fluid shadow"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQorLHLLaQdsv5YW1aW2OfUdarPa_O3h8lXw&s"
+              alt="Sports"
+              class="img-fluid shadow"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="https://makoons.com/blogs/wp-content/uploads/2024/08/macons.jpg"
+              alt="Events"
+              class="img-fluid shadow"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="https://assets.qz.com/media/5c34a953e51f75e209017567b7ef59a7.jpg"
+              alt="Library"
+              class="img-fluid shadow"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="https://www.shutterstock.com/image-photo/indian-little-girl-kid-painting-260nw-2434386531.jpg"
+              alt="Arts"
+              class="img-fluid shadow"
+            />
+          </div>
+          <div class="col-6 col-md-4">
+            <img
+              src="https://images.tribuneindia.com/cms/gall_content/2017/8/2017_8$largeimg12_Saturday_2017_004213296.jpg"
+              alt="Celebrations"
+              class="img-fluid shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions CTA -->
+    <section id="admissions" class="bg-primary text-white text-center">
+      <div class="container" data-aos="fade-up">
+        <h2>Admissions Open</h2>
+        <p class="lead">
+          Enroll your child today and be part of our growing family.
+        </p>
+        <a href="tel:+919000000000" class="cta-btn">Call Now</a>
+      </div>
+    </section>
+    <!-- Sticky Buttons -->
+    <div class="sticky-buttons">
+        <a href="https://wa.me/+918106136242" class="btn btn-success shadow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+            />
+          </svg>
+        </a>
+      <a href="tel:+919876543210" class="btn btn-call shadow"> 📞 </a>
+      <a href="mailto:info@rainbowschool.com" class="btn btn-email shadow">
+        ✉️
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+      <p>© 2025 Rainbow EM School | Mangalagiri, Yerrabalem, Andhra Pradesh</p>
+      <p>📞 <a href="tel:+919490316242">+91 9490316242</a> | ✉️ info@rainbowemschool.com</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
